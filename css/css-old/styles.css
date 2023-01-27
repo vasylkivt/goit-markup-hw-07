@@ -55,9 +55,10 @@ address {
 button {
   cursor: pointer;
 }
-body {
-  min-width: 1440px;
 
+
+
+body {
   background-color: var(--primary-background-color-light);
   color: var(--primary-text-color-dark);
   font-family: var(--primary-font);
