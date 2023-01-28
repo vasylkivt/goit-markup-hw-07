@@ -64,11 +64,15 @@
       <div class="container header-items">
         <nav class="header-nav">
           <a class="link logo" href="./index.html"
-            >Web<span class="logo-header">Studio</span></a
-          >
+            >Web
+            <span class="logo-header"> Studio </span>
+          </a>
+
           <ul class="list menu">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Studio</a>
+              <a class="menu-link link " href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link corrent" href="./portfolio.html"
@@ -76,9 +80,7 @@
               >
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html"
-                >Contacts</a
-              >
+              <a class="menu-link link" href="./index.html">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -109,6 +111,11 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn-icon" width="32" heigth="32">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -158,7 +165,7 @@
                 </div>
 
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Banking App Interface Concept</h2>
+                  <h2 class="card-title">Banking App Interface Concept</h2>
 
                   <p class="text">App</p>
                 </div>
@@ -183,7 +190,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Cashless Payment</h2>
+                  <h2 class="card-title">Cashless Payment</h2>
 
                   <p class="text">Marketing</p>
                 </div>
@@ -208,7 +215,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Meditaion App</h2>
+                  <h2 class="card-title">Meditaion App</h2>
 
                   <p class="text">App</p>
                 </div>
@@ -233,7 +240,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Taxi Service</h2>
+                  <h2 class="card-title">Taxi Service</h2>
 
                   <p class="text">Marketing</p>
                 </div>
@@ -258,7 +265,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Screen Illustrations</h2>
+                  <h2 class="card-title">Screen Illustrations</h2>
 
                   <p class="text">Design</p>
                 </div>
@@ -283,7 +290,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Online Courses</h2>
+                  <h2 class="card-title">Online Courses</h2>
 
                   <p class="text">Marketing</p>
                 </div>
@@ -308,7 +315,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Instagram Stories Concept</h2>
+                  <h2 class="card-title">Instagram Stories Concept</h2>
 
                   <p class="text">Design</p>
                 </div>
@@ -333,7 +340,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Organic Food</h2>
+                  <h2 class="card-title">Organic Food</h2>
 
                   <p class="text">Web Site</p>
                 </div>
@@ -358,7 +365,7 @@
                   </div>
                 </div>
                 <div class="portfolio-desc">
-                  <h2 class="sub-title">Fresh Coffee</h2>
+                  <h2 class="card-title">Fresh Coffee</h2>
 
                   <p class="text">Web Site</p>
                 </div>
@@ -455,5 +462,132 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="bdrop-mobile-menu is-open" data-menu>
+      <div class="mobile-menu">
+        <button
+          class="close-mobile-menu-btn"
+          type="button"
+          data-menu-close
+        >
+          <svg class="close-mobile-menu-btn-icon" width="8" heigth="8">
+            <use href="./images/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+
+        <nav class="nav-mobile">
+          <ul class="list nav-mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link " href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link corrent-mobile" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a
+                class="mobile-menu-link link "
+                href="./index.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <address class="address-mobile-menu">
+          <ul class="contacts-mobile-menu list">
+            <li class="contacts-mobile-menu-item">
+              <a class="mobile-menu-tel link" href="tel:+11(000)111-11-11">
+                +11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contacts-mobile-menu-item">
+              <a
+                class="mobile-menu-email link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="list mobile-menu-social-media-list">
+          <li class="mobile-menu-social-mebia-item">
+            <a
+              class="mobile-menu-social-media-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-mebia-item">
+            <a
+              class="mobile-menu-social-media-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-menu-social-mebia-item">
+            <a
+              class="mobile-menu-social-media-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-mebia-item">
+            <a
+              class="mobile-menu-social-media-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                class="mobile-menu-social-media-icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <!-- js -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

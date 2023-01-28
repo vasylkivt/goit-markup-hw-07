@@ -210,6 +210,7 @@ body {
 }
 
 .bdrop-mobile-menu {
+  overflow: auto;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -231,6 +232,14 @@ body {
   padding-bottom: 40px;
   padding-right: 40px;
   padding-left: 40px;
+}
+@media screen and (max-height: 650px) {
+   .mobile-menu{
+    
+   }
+.bdrop-mobile-menu{
+ 
+}
 }
 .open-mobile-menu-btn {
   margin-left: auto;
@@ -700,8 +709,7 @@ color: var(--primary-text-color-dark);
 .team {
   background-color: var(--secondary-background-color-light);
   min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 .team-list {
@@ -779,7 +787,7 @@ color: var(--primary-text-color-dark);
 @media screen and (min-width: 768px) {
   .customers-container {
     max-width: 552px;
-    padding-left: 0;
+   padding-left: 0;
     padding-right: 0;
   }
 }
@@ -1012,9 +1020,11 @@ color: var(--primary-text-color-dark);
 
 /* ================== /Footer ================== */
 
-/* закінчив на модалці треба зробити так щоб на моділці вікно завжди мало падінги 18пкс по краях і зверху та знизу це правило я зодам тільки на телефон через макс відтс бо на планшеті і телефоні все має бути ок */
 
 /* ================== backdrop ================== */
+
+
+
 
 .backdrop {
   position: fixed;
@@ -1048,6 +1058,31 @@ color: var(--primary-text-color-dark);
   border-radius: 4px;
 
   transition: transform var(--time-and-style-of-transition);
+}
+
+@media screen and (max-height: 650px) {
+   .modal-form{
+    position: static;
+    transform: translate(0, 0);
+    margin: 0 auto;
+   }
+.backdrop{
+  padding-top: 96px;
+  padding-bottom: 96px;
+  overflow: auto;
+}
+}
+
+@media screen and (max-width:1199px) {
+  .modal-form{
+    width: 408px;
+  }
+}
+
+@media screen and (max-width:427px) {
+  .modal-form{
+    width: 90%;
+  }
 }
 .is-hidden .modal-form {
   transform: translate(-50%, -50%) scale(0.8);
@@ -1254,3 +1289,178 @@ color: var(--primary-text-color-dark);
 .form-btn-submit:focus {
   background-color: #404bbf;
 }
+
+
+/* ================== Portfolio ================== */
+
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width:768px) {
+  .portfolio{
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}
+
+.btn-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+   row-gap: 16px;
+   column-gap: 24px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width:768px) {
+  .btn-filter-list {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+}
+@media screen and (min-width:1200px) {
+  .btn-filter-list{
+  margin-bottom: 72px;
+  }
+}
+
+.filter-btns {
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--secondary-background-color-light);
+
+  font-family: var(--primary-font-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-accent-color);
+
+  transition: background-color var(--time-and-style-of-transition),
+    color var(--time-and-style-of-transition),
+    box-shadow var(--time-and-style-of-transition),
+    border var(--time-and-style-of-transition);
+}
+.filter-btns:hover,
+.filter-btns:focus {
+  border: 1px solid var(--primary-accent-color-hover);
+  background-color: var(--primary-accent-color-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  color: var(--primary-title-color-light);
+}
+
+@media screen and (min-width:768px) {
+  .filter-btns {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+}
+
+/* ------------------ Project Card list ------------------ */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.card-title{
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--primary-title-color-dark);
+}
+
+.portfolio-item .card-title {
+  margin-bottom: 8px;
+}
+.portfolio-desc {
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-top: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  transition: border var(--time-and-style-of-transition),
+    box-shadow var(--time-and-style-of-transition);
+}
+.portfilio-link:hover .portfolio-desc,
+.portfilio-link:focus .portfolio-desc {
+  border: 0.5px solid #e7e9fc;
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width:768px) {
+.portfolio-item {
+  flex-basis: calc((100% -  24px) / 2);
+}
+.portfolio-list {
+  row-gap: 72px;
+  column-gap: 24px ;
+}
+}
+@media screen and (min-width:1200px) {
+ .portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+.portfolio-list {
+  row-gap: 48px;
+  column-gap: 24px;
+}
+}
+@media screen and (max-width:1199px){
+   .overlay-hover{
+    display: none;
+   }
+}
+@media screen and (min-width:1200px) {
+  .overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--primary-accent-color);
+  transform: translateY(100%);
+
+  transition: transform var(--time-and-style-of-transition);
+}
+.overlay-text {
+  color: #f4f4fd;
+}
+.portfilio-link:hover .overlay-hover,
+.portfilio-link:focus .overlay-hover {
+  transform: translateY(0);
+}
+  
+}
+
+
+
+
+
+
