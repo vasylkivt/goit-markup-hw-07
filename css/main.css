@@ -20,7 +20,7 @@
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
-  --time-and-style-of-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --time-and-style-of-transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* reset */
 h1,
@@ -1060,16 +1060,30 @@ color: var(--primary-text-color-dark);
   transition: transform var(--time-and-style-of-transition);
 }
 
+@media screen and (min-height: 651px){
+ .is-hidden .modal-form {
+  transform: translate(-50%, -50%) scale(0.8);
+} 
+}
+
+
 @media screen and (max-height: 650px) {
+.is-hidden .modal-form{
+    transform: translate(0, 0) scale(0.8) ;
+
+}
+
    .modal-form{
     position: static;
-    transform: translate(0, 0);
+    transform: translate(0, 0) scale(1) ;
     margin: 0 auto;
    }
 .backdrop{
   padding-top: 96px;
   padding-bottom: 96px;
   overflow: auto;
+
+ 
 }
 }
 
@@ -1083,9 +1097,6 @@ color: var(--primary-text-color-dark);
   .modal-form{
     width: 90%;
   }
-}
-.is-hidden .modal-form {
-  transform: translate(-50%, -50%) scale(0.8);
 }
 .modal-close-button {
   position: absolute;
