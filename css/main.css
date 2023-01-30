@@ -373,7 +373,7 @@ body {
   position: relative;
   display: inline-block;
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 10px;
 
   color: var(--primary-title-color-dark);
   font-weight: 500;
@@ -720,6 +720,8 @@ body {
 .team {
   background-color: var(--secondary-background-color-light);
   min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .team-list {
