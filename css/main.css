@@ -720,8 +720,7 @@ body {
 .team {
   background-color: var(--secondary-background-color-light);
   min-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
+ 
 }
 
 .team-list {
@@ -743,9 +742,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1440px;
-  }
+  
   .team-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
   }
